@@ -4,6 +4,7 @@
 \usepackage[margin=0.55in]{geometry}
 \usepackage{fontspec}
 \usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
 
 % \setmainfont{DMSans}[
 %   Path=./DMFontFiles/,
@@ -20,6 +21,8 @@
 \definecolor{nikigrey}{HTML}{262626}
 \definecolor{nikifade}{HTML}{5D6D7E}
 
+\setlist[itemize]{topsep=2pt, itemsep=1pt, parsep=0pt, partopsep=0pt}
+
 % newcommand creates a macro, sectionheader is the name
 % [1] tells us how many arguments it takes
 \newcommand{\sectionheader}[1]{%
@@ -33,6 +36,7 @@
 
 \begin{document}
 \color{nikigrey}
+\pagestyle{empty}
 
 % \selectfont applies the font changes and [7pt] adds vertical space
 \begin{center}
@@ -58,7 +62,7 @@
 
 \sectionheader{SKILLS}
 
-    \noindent \textbf{Languages:} Python, Javascript, Java, C\#, C, R, HTML/CSS, SQL \\
+    \noindent \textbf{Languages:} Python, JavaScript, Java, C\#, C, R, HTML/CSS, SQL \\
     \noindent \textbf{Frameworks \& Libraries:} React, Django, Flask, Spring Boot, Pandas, NumPy, ggplot2
     
     \vspace{4mm}
@@ -66,9 +70,13 @@
 \sectionheader{EXPERIENCE}
 
     \noindent \textbf{Software Developer Intern} \hfill October 2025 - Present\\
-    \noindent {\color{nikifade} CanN2ONet \hfill Guelph, ON} \\
+    \noindent {\color{nikifade} CanN2ONet \hfill Guelph, ON}
+    \begin{itemize}
+        \item Designing a relational database and modular ETL pipelines for processed micrometeorological time-series data (CO\textsubscript{2}, N\textsubscript{2}O) collected across multiple monitoring sites.
+        \item Developing a scalable data framework in Python (pandas, SQLAlchemy) to support an eventual public-facing web portal and future expansion across regions.
+    \end{itemize}
+    \vspace{2.7mm}
 
-    
 
     \noindent \textbf{Software Developer Intern} \hfill May 2025 - August 2025\\
     \noindent {\color{nikifade} GHD \hfill Waterloo, ON}
@@ -76,6 +84,7 @@
         \item Built full-stack Python desktop application for radioactive contamination analysis with interactive GUI, ETL pipeline (pandas/NumPy), and dynamic Matplotlib visualizations featuring multi-parameter filtering.
         \item Developed Excel add-in using C\#/.NET and Add-in Express to perform statistical analyses (t-tests, regression, prediction limits, etc.) directly on spreadsheet data, using Azure DevOps for version control and project management.
     \end{itemize}
+    \vspace{2.7mm}
 
     \noindent \textbf{Undergraduate Research Assistantship} \hfill April 2024 - April 2025\\
     \noindent {\color{nikifade} University of Guelph \hfill Guelph, ON} 
@@ -85,7 +94,7 @@
         \item Published the \href{https://cran.r-project.org/web/packages/RulesTools/index.html}{RulesTools R package} on CRAN, providing custom functions for discretization, rule comparison, and visualization (Euler plots, heatmaps) to streamline association rule mining workflows.
         \item Co-authored research paper on association rule mining for eDNA detection, preparing for submission to a peer-reviewed journal.
     \end{itemize}
-    \vspace{4mm}
+    \vspace{2.7mm}
 
     \noindent \textbf{Teaching Assistant} \hfill September 2023 - December 2024\\
     \noindent {\color{nikifade} University of Guelph \hfill Guelph, ON} 
